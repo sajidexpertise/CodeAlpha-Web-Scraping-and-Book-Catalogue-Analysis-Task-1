@@ -25,7 +25,7 @@ If `python` is not recognized on Windows, try `py -3`. For a quick preview of th
 ## 📊 Interactive Dashboard Preview
 
 <p align="center">
-  <a href="https://sajidexpertise.github.io/CodeAlpha_Web-Scraping-and-Book-Catalogue-Analysis-Task-1/OPEN_DASHBOARD.html">
+  <a href="https://sajidexpertise.github.io/Web-Scraping-and-Book-Catalogue-Analysis-Task-1-CodeAlpha/dashboard/">
     <img src="dashboard/dashboard.png"
          alt="Nexus Catalogue Intelligence Dashboard – CodeAlpha Task 1"
          width="100%">
@@ -34,7 +34,7 @@ If `python` is not recognized on Windows, try `py -3`. For a quick preview of th
 
 <p align="center">
   <strong>
-    <a href="https://sajidexpertise.github.io/Web-Scraping-and-Book-Catalogue-Analysis-Task-1-CodeAlpha/">
+    <a href="https://sajidexpertise.github.io/Web-Scraping-and-Book-Catalogue-Analysis-Task-1-CodeAlpha/dashboard/">
       🚀 Open the Live Interactive Dashboard
     </a>
   </strong>
