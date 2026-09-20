@@ -2,7 +2,25 @@
 
 An end-to-end **web scraping and custom dataset project** created for the CodeAlpha Data Analytics Internship. The Python pipeline navigates the public [Books to Scrape](https://books.toscrape.com/) training catalogue, parses listing and product-detail HTML, creates a structured CSV dataset, generates summary reports, and refreshes a responsive interactive dashboard.
 
-![Book Catalogue Intelligence dashboard](dashboard/dashboard.png)
+## 📊 Interactive Dashboard Preview
+
+<p align="center">
+  <a href="https://sajidexpertise.github.io/CodeAlpha-Web-Scraping-and-Book-Catalogue-Analysis-Task-1/">
+    <img
+      src="dashboard/dashboard.png"
+      alt="Book Catalogue Intelligence Dashboard – CodeAlpha Task 1"
+      width="100%"
+    >
+  </a>
+</p>
+
+<p align="center">
+  <strong>
+    <a href="https://sajidexpertise.github.io/CodeAlpha-Web-Scraping-and-Book-Catalogue-Analysis-Task-1/">
+      🚀 Open the Live Interactive Dashboard
+    </a>
+  </strong>
+</p>
 
 ## Task alignment
 
