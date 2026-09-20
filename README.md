@@ -22,6 +22,24 @@ python analyze.py
 
 If `python` is not recognized on Windows, try `py -3`. For a quick preview of the live pipeline, run `py -3 scrape.py --max-pages 2 --max-books 40`. The default attempts up to 50 catalogue pages and 1,000 product pages, so expect several minutes. It pauses between requests, uses retries for transient failures, and remains sequential.
 
+## 📊 Interactive Dashboard Preview
+
+<p align="center">
+  <a href="https://sajidexpertise.github.io/CodeAlpha_Web-Scraping-and-Book-Catalogue-Analysis-Task-1/OPEN_DASHBOARD.html">
+    <img src="dashboard/dashboard.png"
+         alt="Nexus Catalogue Intelligence Dashboard – CodeAlpha Task 1"
+         width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <strong>
+    <a href="https://sajidexpertise.github.io/Web-Scraping-and-Book-Catalogue-Analysis-Task-1-CodeAlpha/">
+      🚀 Open the Live Interactive Dashboard
+    </a>
+  </strong>
+</p>
+
 ## What the scraper extracts
 
 | CSV field | Meaning | Source |
@@ -35,24 +53,6 @@ If `python` is not recognized on Windows, try `py -3`. For a quick preview of th
 | `url` | Direct source link | Listing to detail-page navigation |
 
 The scraper follows the **Next** pagination link and each product card's URL, reads HTML with **BeautifulSoup**, handles timeouts/retries, validates key fields and deduplicates by UPC. A failed detail page is skipped and logged in `reports/skipped_pages.txt`; check `data/metadata.json` for the final skipped count. The provided starter sample is preserved if the run fails before collecting any rows.
-
-## 📊 Interactive Dashboard Preview
-
-<p align="center">
-  <a href="https://sajidexpertise.github.io/CodeAlpha_Web-Scraping-and-Book-Catalogue-Analysis-Task-1/OPEN_DASHBOARD.html">
-    <img src="dashboard/dashboard.png"
-         alt="Nexus Catalogue Intelligence Dashboard – CodeAlpha Task 1"
-         width="100%">
-  </a>
-</p>
-
-<p align="center">
-  <strong>
-    <a href="https://sajidexpertise.github.io/CodeAlpha_Web-Scraping-and-Book-Catalogue-Analysis-Task-1/OPEN_DASHBOARD.html">
-      🚀 Open the Live Interactive Dashboard
-    </a>
-  </strong>
-</p>
 
 ## Files
 
