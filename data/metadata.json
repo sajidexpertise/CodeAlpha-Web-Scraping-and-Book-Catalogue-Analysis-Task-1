@@ -1,0 +1,8 @@
+{
+  "source": "https://books.toscrape.com/",
+  "sample": false,
+  "record_count": 1000,
+  "pages_visited": 50,
+  "skipped_products": 0,
+  "collected_utc": "2026-09-19T15:09:53+00:00"
+}
