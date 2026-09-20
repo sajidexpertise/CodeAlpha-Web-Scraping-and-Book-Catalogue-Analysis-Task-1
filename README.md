@@ -34,7 +34,7 @@ If `python` is not recognized on Windows, try `py -3`. For a quick preview of th
 
 <p align="center">
   <strong>
-    <a href="https://sajidexpertise.github.io/Web-Scraping-and-Book-Catalogue-Analysis-Task-1-CodeAlpha/dashboard/">
+    <a href="https://sajidexpertise.github.io/CodeAlpha-Web-Scraping-and-Book-Catalogue-Analysis-Task-1/">
       🚀 Open the Live Interactive Dashboard
     </a>
   </strong>
