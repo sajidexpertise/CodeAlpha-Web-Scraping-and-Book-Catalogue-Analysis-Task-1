@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive catalogue dashboard for CodeAlpha Data Analytics Task 1 — Web Scraping.">
+  <title>Book Catalogue Intelligence | CodeAlpha Task 1</title>
+  <link rel="stylesheet" href="dashboard/styles.css">
+</head>
+<body>
+  <main class="dashboard-shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M13 14h38v8H13zM8 27h40v8H8zM16 40h40v8H16z"/><path d="M13 14l-5 4 5 4M48 27l6 4-6 4M16 40l-5 4 5 4"/></svg>
+      </div>
+      <section class="title-block">
+        <p class="eyebrow">CODEALPHA · DATA ANALYTICS · TASK 1</p>
+        <h1>BOOK CATALOGUE INTELLIGENCE</h1>
+        <h2>Web Scraping &amp; Catalogue Analysis</h2>
+        <p class="stack-line">Books to Scrape <span></span> Python · BeautifulSoup · Pandas</p>
+      </section>
+      <section class="filter-panel" aria-label="Dashboard filters">
+        <label>Category<select id="categoryFilter"><option value="all">All Categories</option></select></label>
+        <label>Rating<select id="ratingFilter"><option value="all">All Ratings</option><option value="5">5 Stars</option><option value="4">4 Stars</option><option value="3">3 Stars</option><option value="2">2 Stars</option><option value="1">1 Star</option></select></label>
+        <label>Price Range<select id="priceFilter"><option value="all">Any Price</option><option value="0-20">Under £20</option><option value="20-40">£20–£40</option><option value="40-60">£40–£60</option><option value="60-999">£60+</option></select></label>
+        <div class="tech-row"><span>🐍 Python</span><span>♨ BeautifulSoup</span><span>▥ Pandas</span></div>
+      </section>
+      <p class="motto">Data.<br>Books.<br><strong>Better Insights.</strong></p>
+    </header>
+
+    <section class="kpi-grid" aria-label="Catalogue summary">
+      <article class="kpi"><div class="icon blue">▰</div><div><strong id="bookCount">1,000</strong><h3>Books Collected</h3><p>Complete catalogue scraped</p></div></article>
+      <article class="kpi"><div class="icon violet">▤</div><div><strong id="pageCount">50</strong><h3>Pages Scraped</h3><p>All pages successfully processed</p></div></article>
+      <article class="kpi"><div class="icon coral">◆</div><div><strong id="averagePrice">£35.07</strong><h3>Average Price</h3><p>Average book price in GBP</p></div></article>
+      <article class="kpi"><div class="icon green">✓</div><div><strong id="coverage">100%</strong><h3>Catalogue Coverage</h3><p>Dataset ready to explore</p></div></article>
+    </section>
+
+    <section class="analytics-grid">
+      <article class="panel price-panel">
+        <div class="panel-title"><span class="mini-icon">▥</span><h3>Price Distribution</h3></div>
+        <div id="priceChart" class="bar-chart vertical" aria-label="Price distribution chart"></div>
+      </article>
+      <article class="panel category-panel">
+        <div class="panel-title"><span class="mini-icon">▥</span><h3>Top Categories</h3></div>
+        <div id="categoryChart" class="bar-chart horizontal" aria-label="Top categories chart"></div>
+      </article>
+      <article class="panel rating-panel">
+        <div class="panel-title"><span class="mini-icon">★</span><h3>Rating Breakdown</h3></div>
+        <div class="donut-wrap"><div id="ratingDonut" class="donut"><div><strong>1–5 Stars</strong><span id="donutTotal">1,000 Books</span></div></div></div>
+        <div id="ratingLegend" class="legend"></div>
+      </article>
+      <article class="panel stock-panel">
+        <div class="panel-title"><span class="mini-icon">▣</span><h3>Availability Overview</h3></div>
+        <div class="stock-check">✓</div><strong>In Stock</strong><p id="stockPercent">100% of books available</p>
+        <div class="stock-note">🛒 <span id="stockNote">All 1,000 books in the catalogue are currently in stock.</span></div>
+      </article>
+    </section>
+
+    <section class="records panel">
+      <div class="records-head">
+        <div class="panel-title"><span class="mini-icon">▤</span><h3>Explore Records</h3></div>
+        <div class="records-actions"><input id="searchInput" type="search" placeholder="Search title or category…" aria-label="Search catalogue"><span id="recordSummary">Showing 1–10 of 1,000</span><button id="downloadBtn">⇩ Download CSV</button></div>
+      </div>
+      <div class="table-wrap">
+        <table><thead><tr><th>#</th><th>Title</th><th>Category</th><th>Rating</th><th>Price</th><th>Availability</th><th>Source</th></tr></thead><tbody id="bookTable"></tbody></table>
+      </div>
+      <div class="pagination"><button id="prevPage">← Previous</button><span id="pageLabel">Page 1</span><button id="nextPage">Next →</button></div>
+    </section>
+
+    <footer><span>Web Scraping → Clean Data → Meaningful Insights</span><span>Prepared by <strong>Sajid Ali</strong></span></footer>
+  </main>
+  <script src="dashboard/data.js"></script>
+  <script src="dashboard/app.js"></script>
+</body>
+</html>
